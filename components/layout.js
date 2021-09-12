@@ -34,6 +34,7 @@ export default function Layout({children}){
                     }
                     * {
                         box-sizing: border-box;
+                        background-color: #C0C0C0
                     }
                 `} 
             </style>
