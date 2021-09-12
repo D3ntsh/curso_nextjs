@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import Head from 'next/dist/shared/lib/head';
 import Layout from "../../components/layout";
 import Title from "../../components/title";
 
 export default function Users({ users }){
     return(
         <Layout>
+            <Head>
+                <title>Users</title>
+                <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+            </Head>
             <Title>Users Page</Title>
             <div className='grid'>
                 {users.map(user =>{

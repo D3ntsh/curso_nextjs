@@ -1,3 +1,4 @@
+import Head from "next/dist/shared/lib/head";
 import Layout from "../../components/layout";
 import Title from "../../components/title";
 import Link from "next/dist/client/link";
@@ -17,6 +18,10 @@ export default function Posts({ posts }){
     //}, []  );
     return(
         <Layout>
+            <Head>
+                <title>Posts</title>
+                <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+            </Head>
             <Title>Posts Page</Title>
             <div className='grid'>
                 {posts.map(post => {

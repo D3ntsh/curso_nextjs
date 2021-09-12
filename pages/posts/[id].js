@@ -1,10 +1,15 @@
+import Head from 'next/dist/shared/lib/head';
 import Layout from '../../components/layout';
 import Title from '../../components/title';
 
 export default function Post({ post }){
     
     return(
-        <Layout>            
+        <Layout>  
+            <Head>
+                <title>Post #{post.id}</title>
+                <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+            </Head>          
             <Title >Post Details</Title>
             <div className='card'>
                 <h2>{post.title}</h2>

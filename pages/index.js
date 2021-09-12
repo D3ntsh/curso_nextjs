@@ -1,8 +1,14 @@
+import Head from "next/head";
 import Layout from "../components/layout"
 import Title from "../components/title"
+
 export default function Home(){
     return(
         <Layout>
+            <Head>
+                <title>Curso NextJS</title>
+                <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+            </Head>
             <Title>Home page</Title>
             <p> Aprendamos NextJS</p>
             <style>
