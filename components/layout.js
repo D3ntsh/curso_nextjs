@@ -1,9 +1,18 @@
 import Navbar from "./navbar";
+import Head from 'next/head';
+import { useState } from 'react';
 
 export default function Layout({children}){
+    const [counter, setCounter] = useState(0);
+
     return(
         <div>
+            <Head>
+                <title>Head desde Layout</title>
+                <meta name="description" content="Curso de NextJS"/>
+            </Head>
             <Navbar />
+            <h1 onClick={() => setCounter(counter +1)}> {counter} </h1>
             <main>
                 {children                }
             </main>

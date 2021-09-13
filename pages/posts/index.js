@@ -21,6 +21,7 @@ export default function Posts({ posts }){
             <Head>
                 <title>Posts</title>
                 <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+                
             </Head>
             <Title>Posts Page</Title>
             <div className='grid'>

@@ -9,6 +9,7 @@ export default function Post({ post }){
             <Head>
                 <title>Post #{post.id}</title>
                 <meta name="description"  content="Ejercicios de curso de Youtube, con el Framework NextJS" />
+                
             </Head>          
             <Title >Post Details</Title>
             <div className='card'>
